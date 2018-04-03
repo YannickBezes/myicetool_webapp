@@ -7,15 +7,16 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modifications des {{ name }}</h4>
+                    <h4 class="modal-title">Modification des {{ name }}</h4>
                 </div>
                 <form>
                     <div class="modal-body">
                         Sélectionnez les {{ name }} :
                         <ul>
-                            <li v-for="d in collection">
-                                <input type="checkbox" name="data" v-bind:value="d.id" :checked="check(d.id)" ref="inputs" v-bind:data-libelle="d.libelle" v-on:change="checkPoids"> {{ d.libelle}}
-								<input type="number" v-if="name === 'constituants'" v-on:input="checkPoids">
+                            <li v-for="d in collection" class="li-modal">
+                                <input type="checkbox" name="data" v-bind:value="d.id" :checked="check(d.id)" ref="inputs" v-bind:data-libelle="d.libelle" v-on:change="checkPoids">
+								{{ d.libelle}}
+								<input type="number" v-if="name === 'constituants'" v-on:input="checkPoids" class="poids-constituant" placeholder="		%" min="0" max="100">
                             </li>
                         </ul>
                     </div>

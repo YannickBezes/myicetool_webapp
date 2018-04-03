@@ -503,6 +503,20 @@ input.styleNom {
     max-width: 400px;
     padding-left: 20px;
 }
+.poids-constituant {
+    width: 100px;
+    height: 23px;
+    margin-left: 10px;
+}
+
+.poids-constituant+span {
+    color: #fa5c62;
+    float: right;
+}
+.li-modal {
+    margin-bottom: 5px;
+    list-style: none;
+}
 
 @media (max-width: 500px) {
     .footer {

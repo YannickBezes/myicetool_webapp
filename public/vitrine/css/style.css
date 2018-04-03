@@ -1120,15 +1120,15 @@ h6 {
  */
 
 .bg-image-2 {
-    background: url('../images/background-2.jpg');
+    background: url(../images/background-2.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 80%;
     background-position: 50% 50%;
     background-attachment: initial;
     background-repeat: no-repeat;
-    background-color: #ffffff;
+    background-color: #6a696a1c;
 }
 
 .features-section-2 .section-header {
@@ -1338,7 +1338,7 @@ h6 {
 }
 
 .features-section-6 .each-features .inner:hover .position {
-    color: #355dff;
+    color: #85d1e3;
 }
 
 
@@ -1449,4 +1449,7 @@ h6 {
     background-size: contain;
     width: 850px;
     margin-top: 100px;
+}
+.mail {
+    font-size: 14px;
 }

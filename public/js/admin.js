@@ -251,6 +251,7 @@ document.querySelectorAll('strong[checkbox]').forEach(el => {
     span.setAttribute('data-toggle', 'modal')
     span.setAttribute('data-target', '#edit')
     span.onclick = function() {
+        tlp.$tooltip.close()
         let name = this.parentElement.textContent
         name = name.slice(0, name.length - 9).toLowerCase()
         $modal.data().name = name

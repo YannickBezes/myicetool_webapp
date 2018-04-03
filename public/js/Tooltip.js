@@ -39,7 +39,7 @@ class Tooltip {
         // Button delete
         var spanDelete = document.createElement('span')
         spanDelete.className = 'material-icons'
-        spanDelete.textContent = 'close'
+        spanDelete.textContent = 'delete'
         var linkDelete = document.createElement('a')
         linkDelete.onclick = function() {
             document.getElementById('polygone').value.delete()

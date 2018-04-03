@@ -108,9 +108,16 @@ class Zone {
         this.$rectangle.addListener('click', () => {
             map.$maps.panTo(this.northEast)
             if (this.new === false) {
+                for (const key in this.zone) {
+                    const el = this.zone[key]
+                    if (el === null) {
+                        $zone.data().zone[key] = "Entrez une valeur"
+                    } else {
+                        $zone.data().zone[key] = el
+                    }
+                }
                 $app.data().show = false
                 $app.data().showZone = true
-                $zone.data().zone = this.zone
                 scrollTo(0, 45)
             }
         })

@@ -148,7 +148,7 @@ class CascadeController extends Controller {
         $commentaire = New Commentaire();
         $commentaire->libelle = $req->input('contenu');
 
-        $commentaire->user_id = $req->input('user_id');
+        $commentaire->user_id = $req->input('user');
 
         $commentaire->cascade_id = $cascade_id;
         $commentaire->date = date('Y-m-d');
