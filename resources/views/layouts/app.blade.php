@@ -102,7 +102,7 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3I1xh6XQVZNT7jJ65hPUBDN_A6YAcAuE&libraries=geometry,places,drawing"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&libraries=geometry,places,drawing"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 
     <script src="{{ asset('js/Marker.js') }}"></script>
